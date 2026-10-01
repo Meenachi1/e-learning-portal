@@ -342,3 +342,6 @@ class offers(models.Model):
 
     def __str__(self):
         return self.title 
+    
+class Message(models.Model):
+    content = models.TextField()

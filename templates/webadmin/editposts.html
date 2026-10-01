@@ -25,7 +25,7 @@ Edit Your Post
                                                         <form method="post" enctype="multipart/form-data">
                                                         {% csrf_token %}
                                                         {{editpost.media}}
-              {{editpost|crispy}}
+              {{editpost}}
               <button class="btn btn-primary" value="submit" type="submit">Update</button>
               </form>
                                                         </div>

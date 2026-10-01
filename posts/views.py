@@ -19,7 +19,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.views.decorators.csrf import csrf_exempt
 from edureka.settings import *
 import razorpay
-client = razorpay.Client(auth=(KEY_ID, KEY_SECRET))
+client = razorpay.Client(auth=("RAZORPAY_KEY_ID", "RAZORPAY_KEY_SECRET"))
 # Create your views here.
 
 def home(request):
@@ -1173,4 +1173,9 @@ def edit_ribbon(request, id):
         ribbon = ribbonform(instance=ribbon)
 
     return render(request, "webadmin/edit_ribbon.html", {'edit':ribbon })    
+
+
+def send_message(request):
+    # Add your logic here to handle the sending message
+    return HttpResponse("Message sent successfully!")
     

@@ -25,7 +25,7 @@ Send Message
                                                         <form method="post" enctype="multipart/form-data">
                                                         {% csrf_token %}
                                                         {{msg.media}}
-              {{msg|crispy}}
+              {{msg}}
               <button class="btn btn-primary" value="submit" type="submit" style="margin-top:20px;">Send Message</button>
               </form>
                                                         </div>

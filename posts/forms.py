@@ -217,7 +217,7 @@ class approve_certForm(forms.ModelForm):
 class sendmessage(forms.ModelForm):
 
     class Meta:
-        model = message
+        model = Message
         fields = '__all__'
         exclude = ['wp']
        

@@ -25,7 +25,7 @@ Edit Reviews
                                                         <form method="post" enctype="multipart/form-data">
                                                         {% csrf_token %}
                                                         {{edit.media}}
-              {{edit|crispy}}
+              {{edit}}
               <button class="btn btn-primary" value="submit" type="submit" style="margin-top:20px;">Add</button>
               </form>
                                                         </div>

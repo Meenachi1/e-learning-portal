@@ -25,7 +25,7 @@ Edit T & C
                                                         <form method="post" enctype="multipart/form-data">
                                                         {% csrf_token %}
                                                         {{editblank.media}}
-              {{editblank|crispy}}
+              {{editblank}}
               <button class="btn btn-primary" value="submit" type="submit" style="margin-top:20px;">Add</button>
               </form>
                                                         </div>

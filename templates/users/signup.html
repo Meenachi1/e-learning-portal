@@ -25,7 +25,7 @@
     <section class="navbar-section">
         <div class="container">
            <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html"><img src="{% static 'images/inet.png' %}"></a>
+            
            </nav>
        </div>
     </section>
@@ -50,7 +50,7 @@
     
     <section class="dashboard-heading">
       <div class="container">
-         <h1 class="text-center mt-4 mb-5">Account Sign In</h1>
+         <h1 class="text-center mt-4 mb-5">Account Sign Up</h1>
            <h3>All fields are required.</h3>
               <p>Enter information on this page in the Roman alphabet. (Alphanumeric)
               </p>
@@ -61,8 +61,8 @@
                <p>Your username must contain 6 or more characters.</p>
                <form method='post'>
                {% csrf_token %}
-               {{form|crispy}}
-               {{customerForm|crispy}}
+               {{form}}
+               {{customerForm}}
                 {% if request.GET.next %}
                <input type="hidden" name="next" value="{{request.GET.next}}">
                {% endif %}
@@ -85,7 +85,7 @@
                   <li><a href="#">Privacy</a></li>
                   <li><a href="#">Contact</a></li>
               </ul>
-              <p>Created by PHJY iNet Software Pvt.Ltd. © 2019-2020. All copy rights reserved.</p>
+              <p>Created by PHJY iNet Software Pvt.Ltd. © 2019-2025. All copy rights reserved.</p>
            </div>
          </div>
        </div>

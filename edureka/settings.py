@@ -151,3 +151,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # During devel
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 #This above is very imp for the condition when debug=True, so please paste this file here
+
+RAZORPAY_KEY_ID = 'rzp_live_C7ayx7PaJJkARf'
+RAZORPAY_KEY_SECRET = '4BdgF5N5FitWBRBA6QwZrVwi'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

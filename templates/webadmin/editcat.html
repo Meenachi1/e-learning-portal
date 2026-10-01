@@ -28,7 +28,7 @@ Edit Your Category
                                                         <form method="post" enctype="multipart/form-data">
                                                         {% csrf_token %}
 
-              {{editcat|crispy}}
+              {{editcat}}
               <button class="btn btn-primary" value="submit" type="submit">Update</button>
               </form>
                                                         </div>

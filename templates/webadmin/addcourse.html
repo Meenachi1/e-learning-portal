@@ -24,7 +24,7 @@ Add New Course
                                                         <div class="form-group mb-3">
                                                         <form method="post" enctype="multipart/form-data">
                                                         {% csrf_token %}
-                            {{course|crispy}}
+                            {{course}}
                             <button class="btn btn-primary" value="submit" type="submit" style="margin-top:20px;">Add</button>
                             </form>
                                                         </div>

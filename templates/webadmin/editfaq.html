@@ -25,7 +25,7 @@ Edit Frequnetly Asked Questions
                                                         <form method="post" enctype="multipart/form-data">
                                                         {% csrf_token %}
                                                         {{faqForm.media}}
-              {{faqForm|crispy}}
+              {{faqForm}}
               <button class="btn btn-primary" value="submit" type="submit" style="margin-top:20px;">Add</button>
               </form>
                                                         </div>
